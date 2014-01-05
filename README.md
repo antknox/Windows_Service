@@ -63,39 +63,69 @@ CMD开启、停用、禁止系统服务
 sc config命令
 
 命令的格式：sc config <service name> <option>
+
 如果服务禁用就要先设为自动：sc config Server start= auto
+
 net start service name 启动服务
+
 net stop service name 停用服务
+
 清注意start= auto中=号后面一定要有空格
+
 配置如何启动服务
+
 使用命令行
+
 1.       打开“命令提示符”。
+    
 2.       键入： 
 
 sc configservice namestart= {boot|system|auto|demand|disabled}
+
 值
+
 描述
+
 sc config
+
 修改注册表和“服务控制管理器”数据库中的服务项的值。
+
 service name
+
 指定服务的简短名称。
+
 start=
+
 指定服务的启动类型。
+
 boot
+
 由启动加载程序加载的设备驱动程序。
+
 system
+
 在内核初始化过程中启动的设备驱动程序。
+
 auto
+
 每次计算机重新启动时，甚至没有人登录计算机时，都能自动启动的服务。
+
 demand
+
 必须手动启动的服务。如果没有指定 start=，这就是默认值。
+
 disabled
+
 不能启动的服务。要启动一个已禁用的服务，请把启动类型更改为其他值。
+
 注意
+
 To open a command prompt, click Start, point to All programs, point to Accessories, and then click Command Prompt.
+
 要查看该命令的完整语法，请在命令提示符下键入：
 
 sc config help
+
 有关 sc 命令的详细信息，请参阅“相关主题”。
 
 
@@ -109,16 +139,27 @@ sc config /?
 
 选项:
 注意: 选项名称包括等号。
+
       等号和值之间需要一个空格。
+      
  type= <own|share|interact|kernel|filesys|rec|adapt>
+ 
  start= <boot|system|auto|demand|disabled|delayed-auto>
+ 
  error= <normal|severe|critical|ignore>
+ 
  binPath= <BinaryPathName>
+ 
  group= <LoadOrderGroup>
+ 
  tag= <yes|no>
+ 
  depend= <依存关系(以 / (斜杠) 分隔)>
+ 
  obj= <AccountName|ObjectName>
+ 
  DisplayName= <显示名称>
+ 
  password= <密码>
 
 *******************************
