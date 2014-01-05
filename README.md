@@ -76,9 +76,9 @@ net stop service name 停用服务
 
 使用命令行
 
-1.       打开“命令提示符”。
+打开“命令提示符”。
     
-2.       键入： 
+键入： 
 
 sc configservice namestart= {boot|system|auto|demand|disabled}
 
@@ -133,14 +133,20 @@ sc config help
 sc config /?
 
 描述:
-        在注册表和服务数据库中修改服务项。
+
+在注册表和服务数据库中修改服务项。
+
 用法:
-        sc <server> config [service name] <option1> <option2>...
+
+sc <server> config [service name] <option1> <option2>...
 
 选项:
-注意: 选项名称包括等号。
 
-      等号和值之间需要一个空格。
+注意: 
+
+选项名称包括等号。
+
+等号和值之间需要一个空格。
       
  type= <own|share|interact|kernel|filesys|rec|adapt>
  
