@@ -6,6 +6,8 @@
 
 :关于系统的服务项,需要使用管理员限权来运行.
 
+:______________________________________________________________________________________________________________
+
 :系统服务
 
 :******为了某数字软件的乱来*********
@@ -68,6 +70,8 @@ sc config "WSearch" start= disabled
 :设置服务状态
 sc stop "WSearch"
 
+:______________________________________________________________________________________________________________
+
 :硬件服务
 
 :中国建设银行网银U盾(启动类型:手动+服务状态:停止)
@@ -129,7 +133,6 @@ sc config "btwdins" start= disabled
 
 :设置服务状态
 sc stop "btwdins"
-
 
 :硬件自动播放(启动类型:禁止+服务状态:停止)
 :服务名称:显示名称
@@ -203,6 +206,8 @@ sc config "S24EvenMonitor" start= demand
 :设置服务状态
 sc stop "S24EvenMonitor"
 
+:______________________________________________________________________________________________________________
+
 :软件服务
 
 :支付宝 数字证书(启动类型:手动+服务状态:停止)
@@ -225,6 +230,20 @@ sc stop "AlipaySecSvc"
 :net start "Alipay security service"
 :net stop "Alipay security service"
 :************************************
+
+:支付宝 服务(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:pcas:Alipay payment client security service
+
+:服务名称
+:pcas
+
+:设置服务启动类型
+:手动
+sc config "pcas" start= demand
+
+:设置服务状态
+sc stop "pcas"
 
 :沙盘服务(启动类型:手动+服务状态:停止)
 :服务名称:显示名称
@@ -365,3 +384,18 @@ sc config "VMwareHostd" start= demand
 
 :设置服务状态
 sc stop "VMwareHostd"
+
+:Everything(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:Everything:Everything
+
+:服务名称
+:VMwareHostd
+
+:设置服务启动类型
+:手动
+sc config "Everything" start= demand
+
+:设置服务状态
+sc stop "Everything"
+

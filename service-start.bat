@@ -4,14 +4,16 @@
 
 :支付宝
 sc start "AlipaySecSvc"
+sc start "pcas"
+
 :建设银行U盾
 sc start "HZ_CommSrv"
 sc start "WDMonitorCCB"
 
 
 :蓝牙
-sc start "bthserv"
-sc start "btwdins"
+:sc start "bthserv"
+:sc start "btwdins"
 
 
 :内存打印机
@@ -19,9 +21,9 @@ sc start "Spooler"
 
 :无线网卡
 :Internet
-sc start "EvtEng"
-sc start "RegSrvc"
-sc start "S24EvenMonitor"
+:sc start "EvtEng"
+:sc start "RegSrvc"
+:sc start "S24EvenMonitor"
 
 :沙盘
 sc start "SbieSvc"
@@ -42,3 +44,6 @@ sc start "VMnetDHCP"
 sc start "VMware NAT Service"
 sc start "VMUSBArbService"
 sc start "VMwareHostd"
+
+:Everything
+sc start "Everything"
