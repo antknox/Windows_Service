@@ -399,3 +399,13 @@ sc config "Everything" start= demand
 :设置服务状态
 sc stop "Everything"
 
+
+:XMusic(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:XMusicServer:XMusicServer
+
+:服务名称
+:XMusicServer
+
+:设置服务状态
+sc stop "XMusicServer"

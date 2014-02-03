@@ -47,3 +47,6 @@ sc start "VMwareHostd"
 
 :Everything
 sc start "Everything"
+
+:XMusicServer
+sc start "XMusicServer"
