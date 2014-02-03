@@ -22,3 +22,4 @@ TeamViewer
 迅雷基础服务
 Google 更新服务
 VMware Workstation
+虾米Windows客户端
