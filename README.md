@@ -230,6 +230,7 @@ sc config命令
 :使用 服务名称
 
 :
+
       sc start ""
 
       sc stop ""
@@ -237,6 +238,7 @@ sc config命令
 :使用 显示名称
 
 :
+
       net start ""
    
       net stop ""
