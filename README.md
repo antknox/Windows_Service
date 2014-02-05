@@ -70,9 +70,14 @@ Windows_Service
 -残余文件(无法删除文件,可能为系统的服务仍在加载这些文件,只要停止服务即可删除!)
 
 
+***********************************************************************************************************************
+
+
 :基于cmd对系统服务的操作...
 
 CMD开启、停用、禁止系统服务
+
+..
 
 sc config命令
 
@@ -104,45 +109,45 @@ start= auto中=号后面一定要有空格
 
 2.键入： 
 
-      sc configservice namestart= {boot|system|auto|demand|disabled}
-
+      sc config service name start= {boot|system|auto|demand|disabled}
+      (1.)           (2.)                 (3.)     (4.)   (5.)        (6.)    (7.)        (8.)
 值
 
 描述
 
-sc config
+(1.)sc config
 
 修改注册表和“服务控制管理器”数据库中的服务项的值。
 
-service name
+(2.)service name
 
 指定服务的简短名称。
 
-start=
+(3.)start=
 
 指定服务的启动类型。
 
-boot
+(4.)boot
 
 由启动加载程序加载的设备驱动程序。
 
-system
+(5.)system
 
 在内核初始化过程中启动的设备驱动程序。
 
-auto
+(6.)auto
 
 每次计算机重新启动时，甚至没有人登录计算机时，都能自动启动的服务。
 
-demand
+(7.)demand
 
 必须手动启动的服务。如果没有指定 start=，这就是默认值。
 
-disabled
+(8.)disabled
 
 不能启动的服务。要启动一个已禁用的服务，请把启动类型更改为其他值。
 
-注意
+注意:
 
 To open a command prompt, click Start, point to All programs, point to Accessories, and then click Command Prompt.
 
@@ -151,6 +156,9 @@ To open a command prompt, click Start, point to All programs, point to Accessori
       sc config help
 
 有关 sc 命令的详细信息，请参阅“相关主题”。
+
+
+..
 
       sc config /?
 描述:
