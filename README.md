@@ -111,51 +111,51 @@ start= auto中=号后面一定要有空格
 
       sc config service name start= {boot|system|auto|demand|disabled}
       (1.)      (2.)         (3.)    (4.) (5.)   (6.) (7.)   (8.)
-值
+      值
 
-描述
+      描述
 
-(1.)sc config
+      (1.)sc config
 
-修改注册表和“服务控制管理器”数据库中的服务项的值。
+      修改注册表和“服务控制管理器”数据库中的服务项的值。
 
-(2.)service name
+      (2.)service name
 
-指定服务的简短名称。
+      指定服务的简短名称。
 
-(3.)start=
+      (3.)start=
 
-指定服务的启动类型。
+      指定服务的启动类型。
 
-(4.)boot
+      (4.)boot
 
-由启动加载程序加载的设备驱动程序。
+      由启动加载程序加载的设备驱动程序。
 
-(5.)system
+      (5.)system
 
-在内核初始化过程中启动的设备驱动程序。
+      在内核初始化过程中启动的设备驱动程序。
 
-(6.)auto
+      (6.)auto
 
-每次计算机重新启动时，甚至没有人登录计算机时，都能自动启动的服务。
+      每次计算机重新启动时，甚至没有人登录计算机时，都能自动启动的服务。
 
-(7.)demand
+      (7.)demand
 
-必须手动启动的服务。如果没有指定 start=，这就是默认值。
+      必须手动启动的服务。如果没有指定 start=，这就是默认值。
 
-(8.)disabled
+      (8.)disabled
 
-不能启动的服务。要启动一个已禁用的服务，请把启动类型更改为其他值。
+      不能启动的服务。要启动一个已禁用的服务，请把启动类型更改为其他值。
 
-注意:
+      注意:
 
-To open a command prompt, click Start, point to All programs, point to Accessories, and then click Command Prompt.
+      To open a command prompt, click Start, point to All programs, point to Accessories, and then click Command Prompt.
 
-要查看该命令的完整语法，请在命令提示符下键入：
+      要查看该命令的完整语法，请在命令提示符下键入：
 
-      sc config help
+            sc config help
 
-有关 sc 命令的详细信息，请参阅“相关主题”。
+      有关 sc 命令的详细信息，请参阅“相关主题”。
 
 
 ..
@@ -169,13 +169,13 @@ To open a command prompt, click Start, point to All programs, point to Accessori
 
       sc <server> config [service name] <option1> <option2>...
 
-选项:
+      选项:
 
-注意: 
+      注意: 
 
-选项名称包括等号。
+      选项名称包括等号。
 
-等号和值之间需要一个空格。
+      等号和值之间需要一个空格。
 
       type= <own|share|interact|kernel|filesys|rec|adapt>
 
@@ -231,12 +231,14 @@ To open a command prompt, click Start, point to All programs, point to Accessori
 
 :
    sc start ""
+
    sc stop ""
 
 :使用 显示名称
 
 :
    net start ""
+   
    net stop ""
 
 *******************************
