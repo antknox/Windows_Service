@@ -168,20 +168,26 @@ password= <密码>
 *******************************
 
 :样式(启动类型+服务状态)
+
 :服务名称:显示名称
+
 ::
 
 :服务名称
 :
 
 :设置服务启动类型
+
 :自动
+
 sc config "" start= auto
 
 :手动
+
 sc config "" start= demand
 
 :禁止
+
 sc config "" start= disabled
 
 :设置服务状态
@@ -189,6 +195,7 @@ sc config "" start= disabled
 :推荐 使用 sc:
 
 :使用 服务名称
+
 :
 
 sc start ""
@@ -196,6 +203,7 @@ sc start ""
 sc stop ""
 
 :使用 显示名称
+
 :
 
 net start ""
@@ -206,48 +214,65 @@ net stop ""
 
 
 :样式一(启动类型:自动+服务状态:启动)
+
 :服务名称:显示名称
+
 ::
 
 :服务名称
 :
 
 :设置服务启动类型
+
 :自动
+
 sc config "" start= auto
 
 :设置服务状态
+
 sc start ""
 
 :样式二(启动类型:手动+服务状态:停止)
+
 :服务名称:显示名称
+
 ::
 
 :服务名称
 :
 
 :设置服务启动类型
+
 :手动
+
 sc config "" start= demand
 
 :设置服务状态
+
 sc stop ""
 
 :样式三(启动类型:禁止+服务状态:停止)
+
 :服务名称:显示名称
+
 ::
 
 :服务名称
+
 :
 
 :设置服务启动类型
+
 :自动
+
 sc config "" start= auto
 
 :禁止
+
 sc config "" start= disabled
 
 :设置服务状态
+
 sc stop ""
 
 by antknox
