@@ -110,7 +110,7 @@ start= auto中=号后面一定要有空格
 2.键入： 
 
       sc config service name start= {boot|system|auto|demand|disabled}
-      (1.)           (2.)                 (3.)     (4.)   (5.)        (6.)    (7.)        (8.)
+      (1.)      (2.)         (3.)    (4.) (5.)   (6.) (7.)   (8.)
 值
 
 描述
