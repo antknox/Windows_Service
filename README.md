@@ -74,13 +74,17 @@ CMD开启、停用、禁止系统服务
 
 sc config命令
 
-   命令的格式：sc config <service name> <option>
+   命令的格式：
+   
+      sc config <service name> <option>
 
-   如果服务禁用就要先设为自动：sc config Server start= auto
-
-   net start service name 启动服务
-
-   net stop service name 停用服务
+   如果服务禁用就要先设为自动：
+      sc config Server start= auto
+   
+    启动服务
+      net start service name 
+   停用服务
+      net stop service name 
 
    清注意start= auto中=号后面一定要有空格
 
@@ -88,16 +92,17 @@ sc config命令
 
    使用命令行
 
-   1.打开“命令提示符”。
+   1.打开“命令提示符/CMD”。
+   
    2.键入： 
 
-   sc configservice namestart= {boot|system|auto|demand|disabled}
+      sc configservice namestart= {boot|system|auto|demand|disabled}
 
    值
 
    描述
 
-   sc config
+      sc config
 
    修改注册表和“服务控制管理器”数据库中的服务项的值。
 
@@ -135,16 +140,19 @@ sc config命令
 
    要查看该命令的完整语法，请在命令提示符下键入：
 
-   sc config help
+      sc config help
 
    有关 sc 命令的详细信息，请参阅“相关主题”。
 
-   sc config /?
+      sc config /?
 
    描述:
+   
    在注册表和服务数据库中修改服务项。
+   
    用法:
-   sc <server> config [service name] <option1> <option2>...
+   
+      sc <server> config [service name] <option1> <option2>...
 
    选项:
 
@@ -161,6 +169,7 @@ sc config命令
    error= <normal|severe|critical|ignore>
 
    binPath= <BinaryPathName>
+   
    group= <LoadOrderGroup>
 
    tag= <yes|no>
@@ -188,15 +197,15 @@ sc config命令
 
 :自动
 
-sc config "" start= auto
+      sc config "" start= auto
 
 :手动
 
-sc config "" start= demand
+      sc config "" start= demand
 
 :禁止
 
-sc config "" start= disabled
+      sc config "" start= disabled
 
 :设置服务状态
 
@@ -206,17 +215,17 @@ sc config "" start= disabled
 
 :
 
-sc start ""
+      sc start ""
 
-sc stop ""
+      sc stop ""
 
 :使用 显示名称
 
 :
 
-net start ""
+      net start ""
 
-net stop ""
+      net stop ""
 
 *******************************
 
@@ -234,11 +243,11 @@ net stop ""
 
 :自动
 
-sc config "" start= auto
+      sc config "" start= auto
 
 :设置服务状态
 
-sc start ""
+      sc start ""
 
 :样式二(启动类型:手动+服务状态:停止)
 
@@ -253,11 +262,11 @@ sc start ""
 
 :手动
 
-sc config "" start= demand
+      sc config "" start= demand
 
 :设置服务状态
 
-sc stop ""
+      sc stop ""
 
 :样式三(启动类型:禁止+服务状态:停止)
 
@@ -273,15 +282,15 @@ sc stop ""
 
 :自动
 
-sc config "" start= auto
+      sc config "" start= auto
 
 :禁止
 
-sc config "" start= disabled
+      sc config "" start= disabled
 
 :设置服务状态
 
-sc stop ""
+      sc stop ""
 
 by antknox
 
