@@ -83,11 +83,11 @@ sc config命令
 
 命令的格式：
 
-sc config <service name> <option>
+      sc config <service name> <option>
 
 如果服务禁用就要先设为自动：
 
-sc config Server start= auto
+      sc config Server start= auto
 
 启动服务
 
@@ -177,25 +177,25 @@ To open a command prompt, click Start, point to All programs, point to Accessori
 
 等号和值之间需要一个空格。
 
-type= <own|share|interact|kernel|filesys|rec|adapt>
+      type= <own|share|interact|kernel|filesys|rec|adapt>
 
-start= <boot|system|auto|demand|disabled|delayed-auto>
+      start= <boot|system|auto|demand|disabled|delayed-auto>
 
-error= <normal|severe|critical|ignore>
+      error= <normal|severe|critical|ignore>
 
-binPath= <BinaryPathName>
+      binPath= <BinaryPathName>
 
-group= <LoadOrderGroup>
+      group= <LoadOrderGroup>
 
-tag= <yes|no>
+      tag= <yes|no>
 
-depend= <依存关系(以 / (斜杠) 分隔)>
+      depend= <依存关系(以 / (斜杠) 分隔)>
 
-obj= <AccountName|ObjectName>
+      obj= <AccountName|ObjectName>
 
-DisplayName= <显示名称>
+      DisplayName= <显示名称>
 
-password= <密码>
+      password= <密码>
 
 *******************************
 
@@ -206,17 +206,21 @@ password= <密码>
 ::
 
 :服务名称
+
 :
 
 :设置服务启动类型
 
 :自动
+
       sc config "" start= auto
 
 :手动
+
       sc config "" start= demand
 
 :禁止
+
    sc config "" start= disabled
 
 :设置服务状态
@@ -233,7 +237,6 @@ password= <密码>
 
 :
    net start ""
-
    net stop ""
 
 *******************************
@@ -246,6 +249,7 @@ password= <密码>
 ::
 
 :服务名称
+
 :
 
 :设置服务启动类型
@@ -265,6 +269,7 @@ password= <密码>
 ::
 
 :服务名称
+
 :
 
 :设置服务启动类型
