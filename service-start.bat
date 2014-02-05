@@ -10,6 +10,9 @@ sc start "pcas"
 sc start "HZ_CommSrv"
 sc start "WDMonitorCCB"
 
+:工商银行
+sc "ICBC Daemon Service"
+
 
 :蓝牙
 :sc start "bthserv"

@@ -1,6 +1,7 @@
 update
 date:2013-11-06
         2014-01-05
+        2014-02-05
 
 :系统服务
 Windows 安全中心
@@ -9,11 +10,14 @@ Windows搜索
 Windows 更新
 
 :硬件服务
-中国建设银行网银U盾
 蓝牙
 硬件自动播放
 内存加载打印
 Intel PROSet/Wireless WiFi
+
+:Bank
+中国建设银行网银U盾
+中国工商银行
 
 :软件服务
 支付宝

@@ -2,7 +2,7 @@
 
 :by antknox
 
-:2013-11-06
+:2014-02-05
 
 :关于系统的服务项,需要使用管理员限权来运行.
 
@@ -73,34 +73,6 @@ sc stop "WSearch"
 :______________________________________________________________________________________________________________
 
 :硬件服务
-
-:中国建设银行网银U盾(启动类型:手动+服务状态:停止)
-:服务名称:显示名称
-:HZ_CommSrv:HDZB Comm Service For V2.0
-
-:服务名称
-:HZ_CommSrv
-
-:设置服务启动类型
-:手动
-sc config "HZ_CommSrv" start= demand
-
-:设置服务状态
-sc stop "HZ_CommSrv"
-
-:中国建设银行网银U盾(启动类型:手动+服务状态:停止)
-:服务名称:显示名称
-:WDMonitorCCB:WatchData ccb V3.2
-
-:服务名称
-:WDMonitorCCB
-
-:设置服务启动类型
-:手动
-sc config "WDMonitorCCB" start= demand
-
-:设置服务状态
-sc stop "WDMonitorCCB"
 
 :硬件蓝牙支持(启动类型:禁止+服务状态:停止)
 :服务名称:显示名称
@@ -205,6 +177,50 @@ sc config "S24EvenMonitor" start= demand
 
 :设置服务状态
 sc stop "S24EvenMonitor"
+
+:Bank
+
+:中国建设银行网银U盾(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:HZ_CommSrv:HDZB Comm Service For V2.0
+
+:服务名称
+:HZ_CommSrv
+
+:设置服务启动类型
+:手动
+sc config "HZ_CommSrv" start= demand
+
+:设置服务状态
+sc stop "HZ_CommSrv"
+
+:中国建设银行网银U盾(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:WDMonitorCCB:WatchData ccb V3.2
+
+:服务名称
+:WDMonitorCCB
+
+:设置服务启动类型
+:手动
+sc config "WDMonitorCCB" start= demand
+
+:设置服务状态
+sc stop "WDMonitorCCB"
+
+:中国工商银行(启动类型:手动+服务状态:停止)
+:服务名称:显示名称
+:ICBC Daemon Service:ICBC Daemon Service
+
+:服务名称
+:ICBC Daemon Service
+
+:设置服务启动类型
+:手动
+sc config "ICBC Daemon Service" start= demand
+
+:设置服务状态
+sc stop "ICBC Daemon Service"
 
 :______________________________________________________________________________________________________________
 
@@ -398,7 +414,6 @@ sc config "Everything" start= demand
 
 :设置服务状态
 sc stop "Everything"
-
 
 :XMusic(启动类型:手动+服务状态:停止)
 :服务名称:显示名称
