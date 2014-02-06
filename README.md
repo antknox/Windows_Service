@@ -1,7 +1,4 @@
-Windows_Service
-===============
-
-Windows_Service
+#Windows_Service
 
 1.需求-实现某种功能
 
@@ -73,7 +70,7 @@ Windows_Service
 ***********************************************************************************************************************
 
 
-:基于cmd对系统服务的操作...
+##基于cmd对系统服务的操作...
 
 CMD开启、停用、禁止系统服务
 
@@ -86,22 +83,22 @@ sc config命令
       sc config <service name> <option>
 
 如果服务禁用就要先设为自动：
-
-      sc config Server start= auto
-
+```bat
+sc config Server start= auto
+```
 启动服务
-
-      net start service name 
-
+```bat
+net start service name 
+```
 停用服务
-
-      net stop service name 
-
+```bat
+net stop service name 
+```
 清注意:
 
       start= auto中=号后面一定要有空格
 
-配置如何启动服务
+##配置如何启动服务
 
 使用命令行
 
@@ -152,24 +149,24 @@ sc config命令
       To open a command prompt, click Start, point to All programs, point to Accessories, and then click Command Prompt.
 
       要查看该命令的完整语法，请在命令提示符下键入：
-
-            sc config help
-
+```bat
+sc config help
+```
       有关 sc 命令的详细信息，请参阅“相关主题”。
 
 
 ..
-
-      sc config /?
-      
+```bat
+sc config /?
+```
 描述:
 
 在注册表和服务数据库中修改服务项。
 
       用法:
-
-      sc <server> config [service name] <option1> <option2>...
-
+```bat
+sc <server> config [service name] <option1> <option2>...
+```
       选项:
 
       注意: 
@@ -200,6 +197,8 @@ sc config命令
 
 *******************************
 
+##样式
+
 :样式(启动类型+服务状态)
 
 :服务名称:显示名称
@@ -213,17 +212,17 @@ sc config命令
 :设置服务启动类型
 
 :自动
-
-      sc config "" start= auto
-
+```bat
+sc config "" start= auto
+```
 :手动
-
-      sc config "" start= demand
-
+```bat
+sc config "" start= demand
+```
 :禁止
-
-      sc config "" start= disabled
-
+```bat
+sc config "" start= disabled
+```
 :设置服务状态
 
 :推荐 使用 sc:
@@ -233,25 +232,25 @@ sc config命令
 :
 
 :启动
-
-      sc start ""
-
+```bat
+sc start ""
+```
 :停止
-
-      sc stop ""
-
+```bat
+sc stop ""
+ ```
 :使用 显示名称
 
 :
 
 :启动
-
-      net start ""
-
+```bat
+net start ""
+```
 :停止
-
-      net stop ""
-
+```bat
+net stop ""
+```
 *******************************
 
 
@@ -268,13 +267,13 @@ sc config命令
 :设置服务启动类型
 
 :自动
-
-      sc config "" start= auto
-
+```bat
+sc config "" start= auto
+```
 :设置服务状态
-
-      sc start ""
-
+```bat
+sc start ""
+```
 :样式二(启动类型:手动+服务状态:停止)
 
 :服务名称:显示名称
@@ -288,13 +287,13 @@ sc config命令
 :设置服务启动类型
 
 :手动
-
-      sc config "" start= demand
-
+```bat
+sc config "" start= demand
+```
 :设置服务状态
-
-      sc stop ""
-
+```bat
+sc stop ""
+```
 :样式三(启动类型:禁止+服务状态:停止)
 
 :服务名称:显示名称
@@ -308,17 +307,17 @@ sc config命令
 :设置服务启动类型
 
 :自动
-
-      sc config "" start= auto
-
+```bat
+sc config "" start= auto
+```
 :禁止
-
-      sc config "" start= disabled
-
+```bat
+sc config "" start= disabled
+```
 :设置服务状态
-
-      sc stop ""
-
+```bat
+sc stop ""
+```
 by antknox
 
 2014-02-05
